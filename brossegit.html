@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>brossegit.md</title>
+<title>Tuto Git</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 body {
 	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
 	font-size: var(--vscode-markdown-font-size, 14px);
@@ -338,6 +332,8 @@ blockquote {
 code {
 	font-size: 14px;
 	line-height: 19px;
+	background-color: gray;
+	color: white;
 }
 
 /* for inline code */
@@ -370,15 +366,15 @@ code {
 <h2 id="installation">Installation</h2>
 <details>
     <summary>Windows</summary>
-    [Télécharger l'installateur ici](https://git-scm.com/download/win), et suivre les instructions. Pensez à laisser activer (ou l'activer si cas échéant) l'option pour rajouter les commandes git directement dans l'invite de commande Windows.
+    <a href="https://git-scm.com/download/win">Télécharger l'installateur ici</a>, et suivre les instructions. Pensez à laisser activer (ou l'activer si cas échéant) l'option pour rajouter les commandes git directement dans l'invite de commande Windows.
 </details>
 <details>
     <summary>Linux</summary>
-    Git est installé de base sur la plupart des distributions. Si cependant ce n'est pas le cas pour vous, les commandes d'installation sont disponibles [ici](https://git-scm.com/download/linux) (à choisir selon votre gestionnaire de paquets).
+    Git est installé de base sur la plupart des distributions. Si cependant ce n'est pas le cas pour vous, les commandes d'installation sont disponibles <a href="https://git-scm.com/download/linux">ici</a> (à choisir selon votre gestionnaire de paquets).
 </details>
 <details>
     <summary>MacOS</summary>
-    Installez [homebrew](https://brew.sh/), puis lancez la commande `brew install git`.
+    Installez <a href="https://brew.sh/">homebrew</a>, puis lancez la commande `brew install git`.
 </details>
 <h2 id="g%C3%A9n%C3%A9rer-et-lier-la-cl%C3%A9-ssh">Générer et lier la clé ssh</h2>
 <p>Pour générer la clé ssh, entrez simplement <code>ssh-keygen</code> dans votre terminal. On devrait vous demander un mot de passe pour sécuriser la clé. Vous pouvez en choisir un (qui vous sera demandé à chaque opération git). Sinon, vous pouvez laisser le champ vide. (Il faut entrer le mot de passe 2 fois (ou le champ vide le cas échéant) pour le confirmer).</p>
