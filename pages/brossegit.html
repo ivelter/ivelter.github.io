@@ -6,50 +6,61 @@
     <link rel="stylesheet" href="../style/tuto.css">
 </head>
 <body>
-<script>
-    mermaid.initialize({
-        startOnLoad: true,
-        theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-            ? 'dark'
-            : 'default'
-    });
-</script>
+
 <h1 id="tuto-installation-git-et-utilisation-de-gitlab">Tuto installation git et utilisation de gitlab</h1>
 <p>Dans ce tutoriel, vous apprendrez à installer Git sur votre machine, lier votre clé SSH à votre compte GitLab et
     quelques commandes de base.</p>
-<h2 id="installation">Installation</h2>
-<details>
-    <summary>Windows</summary>
-    <a href="https://git-scm.com/download/win">Télécharger l'installateur ici</a>, et suivre les instructions. Pensez à
-    laisser activer (ou l'activer si cas échéant) l'option pour rajouter les commandes git directement dans l'invite de
-    commande Windows.
-</details>
-<details>
-    <summary>Linux</summary>
-    Git est installé de base sur la plupart des distributions. Si cependant ce n'est pas le cas pour vous, les commandes
-    d'installation sont disponibles <a href="https://git-scm.com/download/linux">ici</a> (à choisir selon votre
-    gestionnaire de paquets).
-</details>
-<details>
-    <summary>MacOS</summary>
-    Installez <a href="https://brew.sh/">homebrew</a>, puis lancez la commande `brew install git`.
-</details>
-<h2 id="g%C3%A9n%C3%A9rer-et-lier-la-cl%C3%A9-ssh">Générer et lier la clé ssh</h2>
-<p>Pour générer la clé ssh, entrez simplement <code>ssh-keygen</code> dans votre terminal. On devrait vous demander un
-    mot de passe pour sécuriser la clé. Vous pouvez en choisir un (qui vous sera demandé à chaque opération git). Sinon,
-    vous pouvez laisser le champ vide. (Il faut entrer le mot de passe 2 fois (ou le champ vide le cas échéant) pour le
-    confirmer).</p>
-<p>Une fois générée, vous pouvez trouver cette clé dans votre dossier personnel/.ssh/id_rsa.pub : ouvrez ce fichier dans
-    un éditeur de texte (ou si vous êtes sur Linux, faites <code>cat ~/.ssh/id_rsa.pub</code> dans le terminal) et
-    copiez-en le contenu.</p>
-<p>Pour lier la clé sur GitLab, il vous suffit de vous connecter, puis de cliquer sur votre photo de profil, puis sur
-    Preferences. Allez ensuite dans SSH Keys (à gauche), puis entrez la clé précédemment copiée. Validez ensuite en
-    cliquant sur Add key.</p>
-<h2 id="quelques-commandes-de-base">Quelques commandes de base</h2>
-<h3 id="r%C3%A9cup%C3%A9rer-un-projet-d%C3%A9j%C3%A0-existant">Récupérer un projet déjà existant</h3>
-<p>Rendez vous sur GitLab, puis choisissez un projet dans la liste, ouvrez le et cliquez sur Clone, puis Clone with SSH.
-    Ouvrez ensuite un terminal et entrez la commande suivante : <code>git pull {ici le lien que vous avez copié, sans
-        les crochets}</code>. Un nouveau dossier sera créé, comportant tous les fichiers de la repo Git.</p>
+<article>
+    <h2 id="installation">Installation</h2>
+    <details>
+        <summary>Windows</summary>
+        <p><a href="https://git-scm.com/download/win">Télécharger l'installateur ici</a>, et suivre les instructions.
+            Pensez à
+            laisser activer (ou l'activer si cas échéant) l'option pour rajouter les commandes git directement dans
+            l'invite de
+            commande Windows.</p>
+    </details>
+    <details>
+        <summary>Linux</summary>
+        <p>Git est installé de base sur la plupart des distributions. Si cependant ce n'est pas le cas pour vous, les
+            commandes
+            d'installation sont disponibles <a href="https://git-scm.com/download/linux">ici</a> (à choisir selon votre
+            gestionnaire de paquets).</p>
+    </details>
+    <details>
+        <summary>MacOS</summary>
+        <p>Installez <a href="https://brew.sh/">homebrew</a>, puis lancez la commande <code>brew install git</code>.</p>
+    </details>
+</article>
 
+<article>
+    <h2 id="g%C3%A9n%C3%A9rer-et-lier-la-cl%C3%A9-ssh">Générer et lier la clé ssh</h2>
+    <p>Pour générer la clé ssh, entrez simplement <code>ssh-keygen</code> dans votre terminal. On devrait vous demander
+        un
+        mot de passe pour sécuriser la clé. Vous pouvez en choisir un (qui vous sera demandé à chaque opération git).
+        Sinon,
+        vous pouvez laisser le champ vide. (Il faut entrer le mot de passe 2 fois (ou le champ vide le cas échéant) pour
+        le
+        confirmer).</p>
+    <p>Une fois générée, vous pouvez trouver cette clé dans votre dossier personnel/.ssh/id_rsa.pub : ouvrez ce fichier
+        dans
+        un éditeur de texte (ou si vous êtes sur Linux, faites <code>cat ~/.ssh/id_rsa.pub</code> dans le terminal) et
+        copiez-en le contenu.</p>
+    <p>Pour lier la clé sur GitLab, il vous suffit de vous connecter, puis de cliquer sur votre photo de profil, puis
+        sur
+        Preferences. Allez ensuite dans SSH Keys (à gauche), puis entrez la clé précédemment copiée. Validez ensuite en
+        cliquant sur Add key.</p>
+</article>
+
+<article>
+    <h2 id="quelques-commandes-de-base">Quelques commandes de base</h2>
+    <h3 id="r%C3%A9cup%C3%A9rer-un-projet-d%C3%A9j%C3%A0-existant">Récupérer un projet déjà existant</h3>
+    <p>
+        Rendez vous sur GitLab, puis choisissez un projet dans la liste, ouvrez le et cliquez sur Clone, puis Clone with
+        SSH.
+        Ouvrez ensuite un terminal et entrez la commande suivante : <code>git pull {ici le lien que vous avez copié,
+        sans les crochets}</code>. Un nouveau dossier sera créé, comportant tous les fichiers de la repo Git.
+    </p>
+</article>
 </body>
 </html>
