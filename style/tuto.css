@@ -1,0 +1,43 @@
+* {
+    text-align: justify;
+
+}
+
+html {
+    background-color: #053B50;
+}
+
+article {
+    background-color: #176B87;
+    margin: 10px;
+    padding: 0 10px 5px 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    padding-top: 5px;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 5px;
+}
+
+details > p {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+summary {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+code {
+    background-color: #4d4d4c;
+    color: whitesmoke;
+    padding: 2px;
+}
