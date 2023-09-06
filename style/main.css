@@ -66,4 +66,5 @@ body {
     -moz-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
+    display: none;
 }
