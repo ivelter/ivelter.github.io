@@ -1,0 +1,11 @@
+#wiptitle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+
+.body {
+    background-color: #4d4d4c;
+}
