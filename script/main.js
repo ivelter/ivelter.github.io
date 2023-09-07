@@ -5,7 +5,9 @@ function onMainLoad() {
             .split("; ")
             .find((row) => row.startsWith("doSomethingOnlyOnce"))
     ) {
-        document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=None; Secure";
+        const expires = (new Date(Date.now() + 86400 * 1000)).toUTCString();
+        document.cookie = `doSomethingOnlyOnce=true; expires=${expires}; SameSite=None; Secure`;
+        console.log(document.cookie);
     }
     else {
         document.getElementById("splashdiv").classList.add("notransition");
