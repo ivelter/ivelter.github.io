@@ -68,3 +68,50 @@ body {
     transition: none !important;
     display: none;
 }
+
+/* Navigation menu */
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 64px;
+
+    background-color: #0B0C10;
+}
+
+nav div {
+    margin: 5px;
+}
+
+nav img, .navimglink{
+    max-height: 32px;
+    width: auto;
+    /*margin-top: 16px;
+    margin-bottom: 16px;*/
+}
+
+#leftnav {
+    float: left;
+}
+
+#midnav {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    color: whitesmoke;
+}
+
+#rightnav {
+    float: right;
+    display: flex;
+    vertical-align: center;
+}
+
+#navlinks {
+    vertical-align: center;
+}
