@@ -1,0 +1,22 @@
+#skills {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5% 0 5%;
+}
+
+#skills > div {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #66FCF1;
+    border-radius: 10px;
+}
+
+#skillslist {
+    width: 50%;
+    margin-right: 10%;
+}
+
+#skillsdescription {
+    min-width: 10%;
+    flex-grow: 2;
+}

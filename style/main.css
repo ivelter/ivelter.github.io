@@ -142,9 +142,13 @@ nav div {
     border-color: #66FCF1;
 }
 
-#leftnav a:link, a:visited {
+#leftnav a:link, #midnav a:link{
     color: #66FCF1;
     text-decoration: none;
+}
+
+#leftnav a:visited, #midnav a:visited {
+    color: #66FCF1;
 }
 
 #leftnav a:hover {
@@ -173,6 +177,12 @@ nav div {
 
 #navlinks {
     vertical-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#navlinks > div {
+    color: whitesmoke;
 }
 
 #navlinks > .grow:hover > img {
@@ -196,4 +206,13 @@ article:first-child {
 article p {
     text-align: center;
     width: 100%;
+}
+
+/* lang */
+.fr {}
+
+.en {}
+
+.dontdisplay {
+    display:none !important;
 }
