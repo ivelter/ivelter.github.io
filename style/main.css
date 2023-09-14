@@ -197,3 +197,12 @@ article p {
     text-align: center;
     width: 100%;
 }
+
+/* lang */
+.fr {}
+
+.en {}
+
+.dontdisplay {
+    display:none !important;
+}
