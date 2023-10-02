@@ -10,6 +10,10 @@ window.onload = () => {
             document.body.classList.remove("no-scroll");
             document.getElementById("splashdiv").classList.add("displaynone");
         }, 4500);
+        document.getElementById("splashdiv").addEventListener('click', () => {
+            document.getElementById("splashdiv").classList.add("displaynone");
+            document.getElementById("splashtext").classList.add("displaynone");
+        });
         //document.cookie = `doSomethingOnlyOnce=true; expires=${expires}; SameSite=None; Secure`;
         setCookie("doSomethingOnlyOnce","true",1);
         console.log(document.cookie);
