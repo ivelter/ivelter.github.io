@@ -284,6 +284,13 @@ article p {
     display:flex;
     flex-direction: row;
     align-items:center;
+    background-color: #325272;
+    padding-left: 5%;
+    border-radius: 10px;
+}
+
+.whoamiHeaderContainer a:link, .whoamiHeaderContainer a:visited {
+    text-decoration: none;
 }
 
 .whoamiHeaderContainer > div {
@@ -312,7 +319,7 @@ article p {
 #whoami > div > div:nth-child(4) > div {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
 #whoami > div > div:nth-child(4) > div > div {
