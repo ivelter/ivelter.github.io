@@ -6,6 +6,7 @@
 html, body {
     margin: 0;
     height: auto;
+    overscroll-behavior: none;
 }
 
 body {
@@ -151,6 +152,7 @@ nav div {
     float: left;
     display: flex;
     align-items: center;
+    padding-right: 0;
 }
 
 #leftnav a {
@@ -183,17 +185,14 @@ nav div {
     text-decoration: none;
 }
 
-#leftnav img {
+#leftnav img, .leftnavlogolink {
     height: 80%;
     padding-left: 5px;
     padding-right: 24px;
 }
 
 #midnav {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-15%);
-    color: whitesmoke;
+    flex-grow: 5;
 }
 
 #rightnav {
@@ -257,6 +256,74 @@ article {
 article p {
     text-align: center;
     width: 100%;
+}
+
+/* Presentation section */
+
+#whoami > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background-color: #053B50;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+#whoami p {
+    text-align: justify;
+}
+
+#whoami h1, h2, h3 {
+    text-align: center;
+}
+
+.whoamiHeaderContainer {
+    width: 80%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    background-color: #325272;
+    padding-left: 5%;
+    border-radius: 10px;
+}
+
+.whoamiHeaderContainer a:link, .whoamiHeaderContainer a:visited {
+    text-decoration: none;
+}
+
+.whoamiHeaderContainer > div {
+    flex-grow: 1;
+}
+
+.cvButton, .cvButton:link, .cvButton:visited {
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    border-color: #129f4a;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.cvButton:hover {
+    background-color: #129f4a;
+}
+
+#whoami > div > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#whoami > div > div:nth-child(4) > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#whoami > div > div:nth-child(4) > div > div {
+    max-width: 30%;
 }
 
 /* lang */

@@ -12,33 +12,32 @@
 
 <div id="splashdiv">
     <div id="splashtext">
-        <h1 id="splashtitle" class="en">Welcome</h1>
-        <h2 id="splashsubtitle" class="en">All aboard!</h2>
-        <h1 id="splashtitle" class="fr">Welcome</h1>
-        <h2 id="splashsubtitle" class="fr">All aboard!</h2>
+        <h1 id="splashtitle" class="en">Welcome!</h1>
+        <h2 id="splashsubtitle" class="en">Here's my portfolio.</h2>
+        <h1 id="splashtitle" class="fr">Bienvenue!</h1>
+        <h2 id="splashsubtitle" class="fr">Voici mon portfolio.</h2>
     </div>
 </div>
 
-<body class="no-scroll">
+<body class="no-scroll" onload="onLoad()">
 <header>
     <nav>
         <div id="leftnav">
             <img class="grow" id="#mainlogo" src="../src/img/logo.png" alt="my beautiful logo">
+            <a class="grow en" href="../index.html">Home</a>
+            <a class="grow fr" href="../index.html">Accueil</a>
+            <div class="verticalbar"></div>
             <a class="grow en" href="#">Skills</a>
             <a class="grow fr" href="#">Compétences</a>
             <div class="verticalbar"></div>
             <a class="grow en" href="#">Experience</a>
             <a class="grow fr" href="#">Expérience</a>
         </div>
-        <div id="midnav">
-            <a href="../index.html"><h1>Return to main page</h1></a>
-        </div>
+        <div id="midnav"></div>
         <div id="rightnav">
             <div id="navlinks">
-                <div class="en">Find me on:</div>
-                <div class="fr">Me contacter:</div>
                 <a class="navimglink grow" href="https://github.com/ivelter" target="_blank"><img class="grow" src="../src/img/github.png" alt="github logo"></a>
-                <!--<a href="#"><img src="../src/img/linkedin.png" alt="linkedin logo"></a>-->
+                <a class="navimglink grow" href="https://www.linkedin.com/in/ilan-velter-b130ba264/" target="_blank"><img src="../src/img/linkedin.png" alt="linkedin logo"></a>
                 <a class="navimglink grow" href="mailto:ivelter0@gmail.com"><img class="grow" src="../src/img/email.png" alt="email illustration"></a>
                 <a class="navimglink grow en" href="#" onClick="switchToFrench()"><img src="../src/img/fr.png" alt="french flag"></a>
                 <a class="navimglink grow fr" href="#" onClick="switchToEnglish()"><img src="../src/img/gb.png" alt="british flag"></a>

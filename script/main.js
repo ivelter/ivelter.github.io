@@ -1,4 +1,8 @@
 window.onload = () => {
+    onLoad();
+}
+
+function onLoad() {
     // Check if splashscreen was already seen (if not write a cookie)
     if (
         !document.cookie
@@ -43,6 +47,7 @@ window.onload = () => {
 
 // lang mngt
 function switchToFrench() {
+    setCookie("lang","fr",365);
     document.querySelectorAll(".en").forEach(elem => {
         elem.classList.add("dontdisplay");
     })
@@ -52,6 +57,7 @@ function switchToFrench() {
 }
 
 function switchToEnglish() {
+    setCookie("lang","en-EN",365);
     document.querySelectorAll(".fr").forEach(elem => {
         elem.classList.add("dontdisplay");
     })
@@ -84,5 +90,5 @@ function getCookie(cname) {
 }
 
 function checkCookieExists(cname) {
-    return getCookie("cname") != "";
+    return getCookie(cname) !== "";
 }
