@@ -1,0 +1,40 @@
+#projects > h2 {
+    font-family: 'Oswald', serif;
+    color: whitesmoke;
+    font-size: 2vw;
+    padding: 1% 1% 0 1%;
+}
+
+#projectCardsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#projectCardsContainer > a {
+    margin: 5%;
+    padding: 3%;
+    flex-basis: 15%;
+    background-color: #325272;
+    border-radius: 10px;
+
+    font-size: 1.5vw;
+}
+
+#projectCardsContainer > a:link, #projectCardsContainer > a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#projectCardsContainer img {
+    width: 75%;
+    height: auto;
+}
+
+#projectCardsContainer > a > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
