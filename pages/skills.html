@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style/skills.css">
     <link rel="icon" href="../src/img/logo.png">
     <script src="../script/main.js"></script>
-    <!--<link rel="stylesheet" href="style/wip.css">-->
+    <script src="../script/skillDescription.js"></script>
 </head>
 
 <div id="splashdiv">
@@ -47,10 +47,94 @@
 </header>
 
 <main id="skills">
-    <div id="skillslist">
-
+    <div id="skillslist" class="yesborder">
+        <a href="#" onClick='showDescription("frontend")'>
+            <p>Front-end</p>
+            <img src="../src/img/skills/frontend.png" alt="front end illustration">
+        </a>
+        <a href="#" onClick='showDescription("backend")'>
+            <p>Back-end</p>
+            <img src="../src/img/skills/backend.png" alt="back end illustration">
+        </a>
+        <a href="#" onClick='showDescription("webdesign")'>
+            <p>Web design</p>
+            <img src="../src/img/skills/webdesign.png" alt="web design illustration">
+        </a>
+        <a href="#" onClick='showDescription("dbms")'>
+            <p>Database Management</p>
+            <img src="../src/img/skills/dbms.png" alt="dbms illustration">
+        </a>
     </div>
-    <div id="skillsdescription">
+
+    <div id="skillsdescription" class="noborder">
+        <div id="skillfrontend" class="displaynone">
+            <div class="fr">
+                Je suis à l'aise en HTML, CSS et JavaScript, et je suis également en train d'apprendre le CSS avancé.
+                J'ai également des connaissances en frameworks JS tels que React et NextJS.
+            </div>
+            <div class="en">
+                I am comfortable with HTML, CSS and JavaScript, and I am in the process of learning advanced CSS.
+                I am also learning to use frameworks such as React and NextJS.
+            </div>
+            <div>
+                <p>HTML ★★★★☆</p>
+                <p>CSS ★★★★☆</p>
+                <p>JavaScript ★★★☆☆</p>
+                <p>NextJS/React ★☆☆☆☆</p>
+            </div>
+        </div>
+
+        <div id="skillbackend" class="displaynone">
+            <div class="fr">
+                Je suis actuellement en train d'apprendre le PHP, à l'aide notamment de mes projets universitaires.
+            </div>
+            <div class="en">
+                I am in the process of learning PHP through my college classes.
+            </div>
+            <div>
+                <p>PHP ★★★☆☆</p>
+            </div>
+        </div>
+
+        <div id="skillwebdesign" class="displaynone">
+            <div class="fr">
+                Je suis à l'aise avec des outils comme Figma, Photoshop et Paint.net, me permettant ainsi de maquetter rapidement
+                des pages de sites web et d'applications. Sur Figma, je peux également les rendre interactices
+                afin de montrer plus facilement les interactions utilisateurs.
+            </div>
+            <div class="en">
+                I have experience with tools like Figma, Photoshop and Paint.net. I can thus easily design web pages and
+                apps for projects. Using Figma, I can also make my mockups interactive, allowing people to easily
+                see how the user can interact with the different elements.
+            </div>
+            <div>
+                <p>Figma ★★★☆☆</p>
+                <p>Photo editing (Photoshop...) ★★★☆☆</p>
+                <p>UX Design ★★☆☆☆</p>
+            </div>
+        </div>
+
+        <div id="dbms" class="displaynone">
+            <div class="fr">
+                J'ai utilisé (et utilise encore) SQL dans de nombreux projets, personnels ou non.
+                Ainsi, je suis habitué à la syntaxe et à quelques variantes du SQL de base comme MariaDB et SQLite.
+                Même si je n'ai pas beaucoup d'expérience avec PL/SQL, je suis quand même déjà familier avec sa syntaxe
+                et je l'utilise dans de nombreux projets.
+            </div>
+            <div class="en">
+                I have used SQL in and out of the many projects I did for college and personal projects.
+                As such, I am experienced with its syntax, and a few SQL variants like MariaDB and SQLite.
+                While I haven't been learning PL/SQL for long, I am already familiar with its syntax, and I am
+                already implementing it in a few projects.
+            </div>
+            <div>
+                <p>SQL ★★★★☆</p>
+                <p>OracleSQL+ ★★★★☆</p>
+                <p>MySQL/MariaDB ★★★☆☆</p>
+                <p>PL/SQL ★★☆☆☆</p>
+                <p>SQLite ★★☆☆☆</p>
+            </div>
+        </div>
 
     </div>
 </main>
