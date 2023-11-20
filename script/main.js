@@ -40,9 +40,9 @@ function onLoad() {
     }
 
     // Add le funny
-    document.getElementById("#mainlogo").addEventListener("click", () => {
+    /*document.getElementById("#mainlogo").addEventListener("click", () => {
         new Audio("./src/sound/funny.mp3").play();
-    });
+    });*/
 }
 
 // lang mngt
